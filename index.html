@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+    <h1 id="title">A Survey about You and Music</h1>
+    <p id="description">Thank you for taking the time to take this survey</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="aform">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" class="block" type="text" name="Name" placeholder="Enter your name" required> 
+            </div>
+            <div class="aform">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" class="block" type="email" name="Email" placeholder="Enter your email" required> 
+            </div>
+            <div class="aform">
+                <label id="number-label" for="number">Age <span>(Optional)</span></label>
+                <input id="number" class="block" type="number" name="number" placeholder="Age" min="1" max="99"> 
+            </div>
+            <div class="aform">
+                <p>Gender</p>
+                <select id="dropdown" class="block" name="gender" required>
+                    <option disabled selected>Select below</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="aform">
+                <p>Music Like Degree</p>
+                <label>
+                    <input name="degree" type="radio" value="3" class="select"> Senior music lover
+                </label>
+                <label>
+                    <input name="degree" type="radio" value="2" class="select"> General music lovers
+                </label>
+                <label>
+                    <input name="degree" type="radio" value="1" class="select"> General interest
+                </label>
+                <label>
+                    <input name="degree" type="radio" value="0" class="select"> No interest
+                </label>
+            </div>
+            <div class="aform">
+                <p>What music genres you like?</p>
+                <label>
+                    <input name="genre" type="checkbox" value="rock" class="select"> Rock 
+                </label>
+                <label>
+                    <input name="genre" type="checkbox" value="classical" class="select"> Classical
+                </label>
+                <label>
+                    <input name="genre" type="checkbox" value="country" class="select"> Country
+                </label>
+                <label>
+                    <input name="genre" type="checkbox" value="metal" class="select"> Metal
+                </label>
+                <label>
+                    <input name="genre" type="checkbox" value="jazz" class="select"> Jazz
+                </label>
+                <label>
+                    <input name="genre" type="checkbox" value="punk" class="select"> Punk
+                </label>
+                <label>
+                    <input name="genre" type="checkbox" value="r&b" class="select"> R&B
+                </label>
+                <label>
+                    <input name="genre" type="checkbox" value="alternative" class="select"> Alternative
+                </label>
+                <label>
+                    <input name="genre" type="checkbox" value="hip-hop" class="select"> Hip-Hop
+                </label>
+                <label>
+                    <input name="genre" type="checkbox" value="electronic" class="select"> Electronic
+                </label>
+            </div>
+            <div class="aform">
+                <p>Your favourate musician(s)</p>
+                <textarea name="textarea" id="textarea" 
+                placeholder="Who is/are your favourate musician(s)"></textarea>
+            </div>
+            <div>
+                <input type="submit" id="submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Thank you :)</p>
+    </footer>
+</body>
+</html>
